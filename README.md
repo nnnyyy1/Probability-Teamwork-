@@ -1,39 +1,51 @@
-# IE221 – Teamwork 4 | Group 11
+# IE221 – Teamwork 3–4–5 | Group 11
 
 Nil Belinay Akkoyun – 2211021005  
 Mina Soyçeri – 2311021014  
 Gönül Hülya Atik – 2211021057  
 
-This repository is created for **IE221 – Probability** course, **Teamwork 3** and **Teamwork 4**.
+This repository is created for the **IE221 – Probability** course, and contains our work for **Teamwork 3**, **Teamwork 4**, and **Teamwork 5**.
 
-## Project Overview
-The objective of this project is to document the simulation codes developed in
-Teamwork 3 and to present a technical analysis of the results obtained from
-probabilistic simulations.
 
-The project focuses on:
-- Experimental verification of the **Strong Law of Large Numbers (SLLN)**,
-- Experimental verification of the **Central Limit Theorem (CLT)**,
-- **Monte Carlo estimation of the value of π**.
+##  Project Overview
 
-## Code Documentation
-All simulation codes are written in Python and are fully documented with:
-- Function descriptions (docstrings),
-- Inline comments for clarity,
-- Clean and readable code structure.
+The project consists of three phases:
 
-The source codes are located in the `src/` folder.
+1. **Teamwork 3**: Initial implementation of SLLN, CLT, and Monte Carlo π estimation.
+2. **Teamwork 4**: Technical reporting and evaluation of convergence behaviors.
+3. **Teamwork 5**: Extended analysis on multiple distributions, testing the limits of SLLN and CLT.
 
-## Methodology
-Random sampling and Monte Carlo simulation techniques are used to illustrate
-different modes of convergence and probabilistic limit theorems.
+We experimentally verify:
+- The **Strong Law of Large Numbers (SLLN)**
+- The **Central Limit Theorem (CLT)**
+- And explore where these theorems do *not* apply
 
-## Results
-The results of the simulations are presented through graphical visualizations,
-including convergence plots, histograms, and comparison with theoretical values.
-All figures are stored in the `results/` folder.
+##  Methodology
 
-## Technical Report
-A detailed technical report including theoretical background, methodology,
-results, and discussion is provided in PDF format under the `reports/` folder.
+- Simulations are performed using Python and Monte Carlo techniques
+- We generate random samples from multiple distributions:
+  - Uniform, Exponential, Pareto(α=3), Pareto(α=1.5), and Cauchy
+- We visualize convergence and compare it to theoretical expectations
 
+
+##  Repository Structure
+
+- `src/`: All Python source code
+- `results/figures_slln/`: Cumulative mean plots for SLLN
+- `results/figures_clt/`: Histograms and Q-Q plots for CLT
+- `reports/`: PDF reports submitted for TW2 and TW3
+- `README.md`: Project overview and team information
+
+
+##  Results
+
+- SLLN: Stabilization of means is observed for most distributions with finite expected value
+- CLT: Normal convergence behavior is observed where assumptions are satisfied
+- Cauchy and Pareto(α=1.5) exhibit divergence due to undefined or infinite moments
+
+All plots are saved in the appropriate subfolders under `results/`.
+
+##  Technical Report
+
+- `TW2_Report.pdf` and `TW3_Report.pdf` are located in the `reports/` folder
+- Each report includes theoretical background, code structure, simulation outputs, and detailed interpretation
